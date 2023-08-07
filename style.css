@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-image: url();
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+
+
+nav {
+    background-color: #f2f2f2;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    margin-left: 1rem;
+}
+
+nav input[type="text"] {
+    padding: 0.5rem;
+    border-radius: 0.25rem;
+    border: none;
+}
+
+nav button[type="submit"] {
+    background-color: #f7ca18;
+    ;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+
+
+.hero {
+    background-image: url(djn.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 2rem;
+    color: #fff;
+    text-shadow: 2px 2px #000;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f7ca18;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f7ca18;
+    ;
+    color: #fff;
+}
+
+
+
+.upcoming-events {
+    background-color: #f7f7f7;
+    padding: 3rem 0;
+}
+
+.upcoming-events h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.event {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.event-date {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-right: 1rem;
+}
+
+.event-date .event-month {
+    font-size: 1.5rem;
+}
+
+.event-date .event-day {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.event-info {
+    flex: 1;
+}
+
+.event-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.event-info p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #f7ca18;
+    font-size: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #f7ca18;
+    color: #000;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    width: calc(33.33% - 2rem);
+    margin: 1rem;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 1rem;
+    font-size: 1.25rem;
+}
+
+.card p {
+    margin: 0 1rem 1rem;
+    font-size: 1rem;
+}
+
+.card .btn {
+    display: block;
+    background-color: #f7ca18;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #f7ca18;
+}
+
+
+.cta {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+}
+
+.cta h2 {
+    font-size: 36px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.cta p {
+    font-size: 24px;
+    margin: 20px 0 0;
+    line-height: 1.5;
+}
+
+
+
+.footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .main-content {
+        justify-content: center;
+    }
+
+    .card {
+        width: calc(50% - 2rem);
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+        justify-content: center;
+    }
+
+    nav li {
+        margin-left: 0;
+        margin-right: 1rem;
+    }
+
+    nav input[type="text"] {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+}
